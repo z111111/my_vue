@@ -19,9 +19,15 @@ const cdn = {
         'https://cdn.staticfile.org/vue-router/3.0.3/vue-router.min.js'
     ]
 }
-
+/**
+ * 压缩gzip
+ * @type {*|CompressionPlugin}
+ */
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
-
+/**
+ * 压缩代码
+ * @type {*|UglifyJsPlugin}
+ */
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
     productionSourceMap: true,
