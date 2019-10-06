@@ -30,7 +30,7 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin')
  */
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
-    productionSourceMap: true,
+    productionSourceMap: false,
     chainWebpack: config => {
         // ============压缩图片 start============
         config.module
